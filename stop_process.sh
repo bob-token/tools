@@ -6,7 +6,7 @@ echo please input string
 exit
 fi
 
-pid=$(ps -ef |grep $1 |grep -v grep|grep -v stop.sh|awk '{print $2}')
+pid=$(ps -ef |grep $1 |grep -v grep|grep -v stop_process.sh|awk '{print $2}')
 
 total=0
 for p in ${pid}
